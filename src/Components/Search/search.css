@@ -1,0 +1,14 @@
+.searchContainer{
+    height:100vh;
+    width: 100vw;
+    background-color: lightgray;
+}
+
+.innerSearchContainer{
+    overflow-x: hidden;
+}
+
+.imgContainer{
+    max-height:200px;
+    overflow: hidden;
+}

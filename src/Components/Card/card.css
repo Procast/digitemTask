@@ -1,33 +1,71 @@
-.cardContainer{
-    width: 100%;
-    background-color: white;
-    margin-top: 1rem;
-    border-radius: 10px;
+.cardContainer {
+  width: 100%;
+  background-color: white;
+  margin-top: 1rem;
+  border-radius: 10px;
 }
 
-.heading{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.profileImage{
-border-radius: 50%;
-height: fit-content;
+.profileImage {
+  border-radius: 50%;
+  height: fit-content;
 }
 
-.name{
-    font-weight: bold;
-    
+.name {
+  font-weight: bold;
 }
 
-.firstPart{
-display: flex;
-gap:1rem;
+.firstPart {
+  display: flex;
+  gap: 1rem;
 }
 
-.time{
-    font-size: 0.7rem;
-    color: lightgray;
+.time {
+  font-size: 0.7rem;
+  color: lightgray;
+  transform: translate(0,-8px);
+}
 
+.imagePlaceholder {
+  width: 100%;
+  height: 600px;
+  /* overflow: hidden;
+  display: flex; */
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  /* align-self: center; */
+}
+
+.photoActionContainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.viewAllComment {
+  color: rgba(177, 175, 175, 0.521);
+  font-size: 0.8rem;
+}
+
+.addAComment {
+  color: rgb(206, 58, 196);
+  font-weight: bold;
+}
+
+.follow {
+  color: rgb(206, 58, 196);
+  font-weight: bold;
+  margin-left: 3px;
+}
+
+.photoActionContainer {
+  font-size: 0.7rem;
 }

@@ -1,17 +1,27 @@
+import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { useSelector, useDispatch } from "react-redux";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import { Outlet, Link } from "react-router-dom";
 import "./layout.css";
+import { searchTerm } from "../Reducers/HomePhotos";
 
 function Layout() {
+  const dispatch = useDispatch();
+  const [term, setTerm] = useState("");
+
+  const addSearchTerm = () => {
+    dispatch(searchTerm(term));
+  };
+
   return (
     <>
       <Navbar bg="white" expand="lg" sticky="top">
-        <Container fluid>
+        <Container>
           <Navbar.Brand>
             <Link to="/" className="brand">
               Postara
@@ -37,8 +47,11 @@ function Layout() {
                 placeholder="Search"
                 className="me-2"
                 aria-label="Search"
+                onChange={(e) => setTerm(e.target.value)}
               />
-              <Button variant="outline-success">Search</Button>
+              <Button variant="outline-success" onClick={addSearchTerm}>
+                Search
+              </Button>
             </Form>
           </Navbar.Collapse>
         </Container>
