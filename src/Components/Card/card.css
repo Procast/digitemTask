@@ -1,0 +1,33 @@
+.cardContainer{
+    width: 100%;
+    background-color: white;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profileImage{
+border-radius: 50%;
+height: fit-content;
+}
+
+.name{
+    font-weight: bold;
+    
+}
+
+.firstPart{
+display: flex;
+gap:1rem;
+}
+
+.time{
+    font-size: 0.7rem;
+    color: lightgray;
+
+}
